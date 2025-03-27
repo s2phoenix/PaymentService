@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: UserService
+  datasource:
+    url: jdbc:mysql://localhost:3306/phoenix?useSSL=false&serverTimezone=UTC
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 2222
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    default-schema: phoenix  # Optional, ensure 'phoenix' schema exists in your DB
+jwt:
+  secret: 5ff4b0c9b2a356bd294ff36829610718dc053cd1fb66349f353f25d1cf7ce0697792f7352652ec46ea95f5875d93ae5e36e3c1b7d2eccf151aef99d0ac56ca2b
