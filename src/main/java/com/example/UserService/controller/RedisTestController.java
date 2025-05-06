@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/redis") // Base URL for the controller
 //NOTICED. do not forgot install redis on ubuntu. it will get the error connection problem.
-public class RedisRestApiController {
+public class RedisTestController {
 
 
     private final RedisExampleService redisExampleService;
 
     @Autowired
-    public RedisRestApiController(RedisExampleService redisExampleService) {
+    public RedisTestController(RedisExampleService redisExampleService) {
         this.redisExampleService = redisExampleService;
     }
 
