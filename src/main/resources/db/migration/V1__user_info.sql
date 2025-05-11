@@ -1,16 +1,16 @@
-CREATE TABLE phoenix.user_info (
+CREATE TABLE reborn.user_info (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    title NVARCHAR(20),
-    first_name NVARCHAR(50),
-    last_name NVARCHAR(50),
-    middle_name NVARCHAR(50),
-    age INT,
-    birthdate NVARCHAR(50),
-    disable_status BOOLEAN,
-    married_status BOOLEAN,
+    user_id VARCHAR(20) NOT NULL,
+    thai_name VARCHAR(50) NOT NULL,
+    eng_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    pin VARCHAR(6) NOT NULL,
+    role VARCHAR(20) NOT NULL,
+    account VARCHAR(20) NOT NULL UNIQUE,
+    password TEXT,
     update_date DATETIME,
-    update_by NVARCHAR(50),
+    update_by VARCHAR(50),
     create_date DATETIME,
-    create_by NVARCHAR(50),
-    status_active BOOLEAN
+    create_by VARCHAR(50),
+    status VARCHAR(20)
 );
