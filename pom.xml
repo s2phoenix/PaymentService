@@ -12,9 +12,9 @@
 		<!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>POCBankService</artifactId>
+	<artifactId>PaymentService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>POCBankService</name>
+	<name>PaymentService</name>
 	<description>Demo project for test bank concept</description>
 	<packaging>jar</packaging>
 	<properties>
@@ -81,21 +81,8 @@
 			<version>0.12.6</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>io.lettuce</groupId>
 			<artifactId>lettuce-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springdoc</groupId>
