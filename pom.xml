@@ -123,28 +123,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.openapitools</groupId>
-				<artifactId>openapi-generator-maven-plugin</artifactId>
-				<version>7.6.0</version> <!-- Latest stable as of May 2025 -->
-				<executions>
-					<execution>
-						<id>generate-angular-client</id>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<inputSpec>${project.basedir}/src/main/resources/openapi.json</inputSpec>
-							<generatorName>typescript-angular</generatorName>
-							<output>${project.build.directory}/generated-sources/angular-client</output>
-							<configOptions>
-								<useSingleRequestParameter>true</useSingleRequestParameter>
-								<ngVersion>15.0.0</ngVersion> <!-- Match your Angular version -->
-							</configOptions>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 </project>
