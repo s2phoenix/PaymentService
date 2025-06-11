@@ -1,6 +1,6 @@
 # 💸 Payment Service (POC for Bank System)
 
-This project is a **minimal payment service** created to support the `POCBankService`.  
+This project is a **minimal payment service** created to support rest call form the `POCBankService`.  
 It's designed to be **simple and cute** 😄 — just enough to demonstrate how an external service can be integrated via API.
 
 ---
